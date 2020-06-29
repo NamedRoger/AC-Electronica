@@ -6,7 +6,7 @@ $(function(e) {
 	    "bScrollInfinite": true,
         "bScrollCollapse": true,
         "ordering": false,
-        "sScrollY": "150px",
+        "sScrollY": "170px",
         "columnDefs": [
     { "width": "8%", "targets": 2 }
   ]
