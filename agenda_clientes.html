@@ -22,7 +22,7 @@
 		<!--  Right-sidemenu css -->
 		<link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
 
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		
 
 		<!--  Custom Scroll bar-->
 		<link href="assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
@@ -36,6 +36,22 @@
 
 		<!--- Animations css-->
 		<link href="assets/css/animate.css" rel="stylesheet">
+
+		<style type="text/css">
+		select{
+    
+		    background: rgba(0,0,0,0.3);
+		    color:#fff;
+		    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+		}
+		</style>
+
+		<!-- Internal Data table css -->
+		<link href="assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+		<link href="assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+		<link href="assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+		<link href="assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+		<link href="assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
 
 	</head>
 
@@ -58,27 +74,24 @@
 								<div class="card-body">
 									<div class="row">
 										<div class="col-lg-1 mg-t-20 mg-lg-t-0">
-											<a href=""><img src="assets/img/logo1.png" width="50"></a>
+											<a href=""><img src="assets/img/logo1.png" width="40"></a>
 										</div>
 										<div class="col-lg-1 mg-t-20 mg-lg-t-0">
 											<h6>Juan Perez</h6>
 										</div>
 											<div class="col-lg-6 mg-t-20 mg-lg-t-0">
 												<div class="input-group">
-													<input class="form-control form-control-sm" style="background-color: #3c3d3e;  " placeholder="Bucar..." type="text"> <span class="input-group-btn"><button class="btn btn-primary btn-sm" type="button"><span class="input-group-btn"><i class="fa fa-search"></i></span></button></span>
+													<input class="form-control form-control-sm" style="background-color: #3c3d3e;  " placeholder="Bucar..." type="text"> <span class="input-group-btn"><button class="btn btn-primary btn-sm" type="button"><i class="fa fa-search"></i></button>
 												</div><!-- input-group -->
 											</div><!-- col-4 -->
 										
-											<div class="col-lg-3 mg-t-20 mg-lg-t-0">
+											<div class="col-lg-4 mg-t-20 mg-lg-t-0">
 												<button class="btn btn-primary btn-sm" data-toggle="modal" data-backdrop="static"data-keyboard="false" data-target="#NuevoCliente"><i class="fas fa-user-plus"></i> Nuevo</button>
 												<button class="btn btn-success btn-sm"><i class="fas fa-file-excel"></i> Exportar</button>
-												<a href="index.html" class="btn btn-dark btn-sm">Cerrar Sesión</a>
+												<a href="index.html" class="btn btn-dark btn-sm">Cerrar Sesión</a>&nbsp;&nbsp;
+												<i class="fas fa-bell"></i>
 											</div>
-											<div class="col-lg-1 mg-t-20 mg-lg-t-0">
-												<div class="main-header-message ">
-													<a href="#"><svg xmlns="http://www.w3.org/2000/svg" class="header-icon-svgs" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-bell"><path d="M18 8A6 6 0 0 0 6 8c0 7-3 9-3 9h18s-3-2-3-9"></path><path d="M13.73 21a2 2 0 0 1-3.46 0"></path></svg><span class=" pulse-danger"></span></a>
-												</div>
-											</div>
+											
 										
 										</div>
 									</div>
@@ -88,149 +101,358 @@
 							<div class="card">
 								<div class="card-body">
 									
-									<div class="row">
-										<div class="col-lg-4 mg-t-20 mg-lg-t-0">
-											<div>
-												<h6>Datos Personales</h6>
-											</div>
-											<div>
-												<ul>
-													<li>Clave de registro: <b>ABCD</b></li>
-													<li>Categoría: <b>Audio Car</b></li>
-													<li>Representante: <b>Jose Manuel Suarez Cruz</b></li>
-													<li>Telefono: <b>4431281423</b></li>
-													<li>Celular: <b>5540387521</b></li>
-													<li>Email: <b>msuarez@iqtics.mx</b></li>
-													<li>Domicilio: <b>Alinso de oñate #55</b></li>
-													<li>Ciudad: <b>Morelia</b></li>
-													<li>Estado: <b>Michoacán</b></li>
-													<li>País: <b>Mexico</b></li>
-													<li>Notas: <b>Comprador de Audio</b></li>
-												</ul>
-											</div>
-										</div>
-
-										<div class="col-lg-4 mg-t-20 mg-lg-t-0">
-											<div>
-												<h6>Datos Empresariales</h6>
-											</div>
-											<div>
-												<ul>
-													<li>Razón Social: <b>aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa</b></li>
-													<li>RFC: <b>SUCM910530V51</b></li>
-													<li>Teléfono: <b>5555555555</b></li>
-													<li>Celular: <b>6666666666</b></li>
-													<li>Email: <b>info@iqtics.mx</b></li>
-													<li>Domicilio: <b>Arenisca #35 La Colina</b></li>
-													<li>Ciudad: <b>Morelia</b></li>
-													<li>Estado: <b>Michoacán</b></li>
-													<li>Pais: <b>Mexico</b></li>
-													<li>C.P.: <b>58140</b></li>
-													<li>Comentarios: <b>Comnetario de Prueba</b></li>
-												</ul>
-											</div>
-										</div>
-										<div class="col-lg-4 mg-t-20 mg-lg-t-0">
-											<div>
-												<h6>Datos Bancarios</h6>
-											</div>
-											<div>
-												<ul>
-													<li>Banco: <b>BBVA</b></li>
-													<li>Cuenta: <b>126874632489308</b></li>
-													<li>Calve Interbancaria: <b>2563170001568462168146</b></li>
-													<li>Limite de Credito: <b>$ 10,000.00</b></li>
-													<li>Dias de Credito: <b>10 Dias</b></li>
-													<li>Número de Precio: <b>1</b></li>
-													<li>Paqueteria: <b>Estafeta</b></li>
-													<li>Fecha de alta: <b>27/06/2020</b></li>
-												</ul>
-											</div>
-										</div>
-								</div>
+							<label>Clave de Registro </label>
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="" value="9999999999999999999999999">&nbsp;&nbsp;&nbsp;
+					      	<label>Categoría </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="number" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;<br>
+					      	<label>Representante </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:565px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+					      	<label>Teléfono </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:170px; background-color: #dcdcdc;" disabled=""><br>
+					      	<label>Celular </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:170px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+					      	<label>Email </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:410px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+					      	<br>
+					      	<label>Notas </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:565px; background-color: #dcdcdc;" disabled="">
+					      	<br>
+					      	<label>Domicilio Casa </label>&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:800px; background-color: #dcdcdc; " disabled="" value="9999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999"><br>
+					      	<label>Ciudad </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+					      	<label>Estado </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+					      	<label>Pais </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">
+					      	<br><br><br>
+					      	<label>Razón Social </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:640px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+					      	<label>RFC </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled=""><br>
+					      	<label>Teléfono Empresa </label>&nbsp;
+					      	<input  type="text" size=10 style="width:170px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+					      	<label>Celular Empresa </label>
+					      	<input  type="text" size=10 style="width:170px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+					      	<label>Email Empresa </label>
+					      	<input  type="text" size=10 style="width:410px; background-color: #dcdcdc;" disabled=""><br>
+					      	<label>Comentario </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:565px; background-color: #dcdcdc;" disabled=""><br>
+					      	<label>Domicilio Empresa </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:800px; background-color: #dcdcdc;" disabled=""><br>
+					      	<label>Ciudad Empresa </label>&nbsp;
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;
+					      	<label>Estado </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;
+					      	<label>País Empresa </label>
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;
+					      	<label>C.P </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:125px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;
+					      	<br><br><br>
+					      	<label>Banco </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;
+					      	<label>Cuenta </label>
+					      	<input  type="text" size=10 style="width:365px; background-color: #dcdcdc;" disabled=""><br>
+					      	<label>Clave Interbancaria </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:485px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;
+					      	<label>Limite de Credito </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="number" size=10 style="width:210px; background-color: #dcdcdc;" disabled=""><br>
+					      	<label>Dias de Credito </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="number" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;
+					      	<label>Número de Precio </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="number" size=10 style="width:30px; background-color: #dcdcdc;" disabled="" value="4">&nbsp;&nbsp;
+					      	</select>&nbsp;&nbsp;
+					      	<label>Fecha de Alta </label>&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;
+					      	<label>Paqueteria</label>&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px; background-color: #dcdcdc;" disabled="">
 								<br><br>
-								<table class="table table-sm table-bordered table-hover">
+										<table class="table table-sm table-bordered table-hover " id="tabla">
 											<thead>
 												<tr>
-													
 													<th>Representante</th>
 													<th>Razon Social</th>
 													<th style="width: 20px">Acciones</th>
 												</tr>
-												<tbody>
-													<tr>
-														<td>Renata Rosas</td>
-														<td>Iqtisc</td>
-														<td>
-															<div class="btn-group" role="group">
-																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
-																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>Renata Rosas</td>
-														<td>Iqtisc</td>
-														<td>
-															<div class="btn-group" role="group">
-																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
-																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>Renata Rosas</td>
-														<td>Iqtisc</td>
-														<td>
-															<div class="btn-group" role="group">
-																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
-																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>Renata Rosas</td>
-														<td>Iqtisc</td>
-														<td>
-															<div class="btn-group" role="group">
-																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
-																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>Renata Rosas</td>
-														<td>Iqtisc</td>
-														<td>
-															<div class="btn-group" role="group">
-																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
-																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>Renata Rosas</td>
-														<td>Iqtisc</td>
-														<td>
-															<div class="btn-group" role="group">
-																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
-																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
-															</div>
-														</td>
-													</tr>
-													<tr>
-														<td>Renata Rosas</td>
-														<td>Iqtisc</td>
-														<td>
-															<div class="btn-group" role="group">
-																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
-																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
-															</div>
-														</td>
-													</tr>
-													
-												</tbody>
 											</thead>
+											<tbody>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												<tr>
+													<td>Bella</td>
+													<td>Chloe</td>
+													<td>
+														<div class="btn-group" role="group">
+																<button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button> 
+																<button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button> 
+															</div>
+													</td>
+													
+												</tr>
+												
+											</tbody>
 										</table>
 							</div>
 						</div>
@@ -245,6 +467,107 @@
 
 			<!-- Modal Agregar-->
 				<div class="modal fade" id="NuevoCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+				  <div class="modal-dialog modal-xl" role="document">
+				    <div class="modal-content">
+				      <div class="modal-header">
+				        <h5 class="modal-title" id="exampleModalLabel">Agregar Cliente</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+				          <span aria-hidden="true">&times;</span>
+				        </button>
+				      </div>
+				      <div class="modal-body">
+				      	<form>
+					      	<label>Clave de Registro </label>
+					      	<input  type="text" size=10 style="width:210px" placeholder="Clave de Registro">
+					      	<label>Categoría</label>
+					      	<select  style="width:130px">
+					      		<option value="Audio Car">Audio Car</option>
+					      		<option value="Audio Pro">Audio Pro</option>
+					      		<option value="Tecnico">Técnico</option>
+					      		<option value="Ingeniero">Ingeniero</option>
+					      		<option value="Menudista">Menudista</option>
+					      		<option value="Mayorista">Mayorista</option>
+					      		<option value="Reparaciones">Reparaciones</option>
+					      	</select><br>
+					      	<label>Representante </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:565px" placeholder="Representante">&nbsp;&nbsp;&nbsp;
+					      	<label>Teléfono </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:170px" placeholder="Teléfono"><br>
+					      	<label>Celular </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:170px" placeholder="Celular">&nbsp;&nbsp;&nbsp;
+					      	<label>Email </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:410px" placeholder="Email">&nbsp;&nbsp;&nbsp;
+					      	<br>
+					      	<label>Notas </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:565px" placeholder="Notas">
+					      	<br>
+					      	<label>Domicilio Casa </label>&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:800px" placeholder="Domicilio Casa" ><br>
+					      	<label>Ciudad </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px" placeholder="Ciudad">&nbsp;&nbsp;&nbsp;
+					      	<label>Estado </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px" placeholder="Estado">&nbsp;&nbsp;&nbsp;
+					      	<label>Pais </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px" placeholder="Pais">
+					      	<br><br><br>
+					      	<label>Razón Social </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:640px" placeholder="Razón Social">&nbsp;&nbsp;&nbsp;
+					      	<label>RFC </label>
+					      	<input  type="text" size=10 style="width:210px" placeholder="RFC"><br>
+					      	<label>Teléfono Empresa </label>&nbsp;
+					      	<input  type="text" size=10 style="width:170px" placeholder="Teléfono Empresa">&nbsp;&nbsp;&nbsp;
+					      	<label>Celular Empresa </label>
+					      	<input  type="text" size=10 style="width:170px" placeholder="Celular Empresa">&nbsp;&nbsp;&nbsp;
+					      	<label>Email Empresa </label>
+					      	<input  type="text" size=10 style="width:410px" placeholder="Email Empresa"><br>
+					      	<label>Comentario </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:565px" placeholder="Comentario"><br>
+					      	<label>Domicilio Empresa </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:800px" placeholder="Domicilio Empresa"><br>
+					      	<label>Ciudad Empresa </label>&nbsp;
+					      	<input  type="text" size=10 style="width:210px" placeholder="Ciudad Empresa">&nbsp;&nbsp;&nbsp;
+					      	<label>Estado </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px" placeholder="Estado">&nbsp;&nbsp;&nbsp;
+					      	<label>País Empresa </label>
+					      	<input  type="text" size=10 style="width:210px" placeholder="País Empresa">&nbsp;&nbsp;&nbsp;
+					      	<label>C.P </label>
+					      	<input  type="text" size=10 style="width:125px" placeholder="C.P">&nbsp;&nbsp;&nbsp;
+					      	<br><br><br>
+					      	<label>Banco </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px" placeholder="Banco">&nbsp;&nbsp;&nbsp;
+					      	<label>Cuenta </label>
+					      	<input  type="text" size=10 style="width:365px" placeholder="Cuenta"><br>
+					      	<label>Clave Interbancaria </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:485px" placeholder="Clave Interbancaria">&nbsp;&nbsp;&nbsp;
+					      	<label>Limite de Credito </label>
+					      	<input  type="number" size=10 style="width:210px" placeholder="Limite de Credito"><br>
+					      	<label>Dias de Credito </label>&nbsp;&nbsp;&nbsp;
+					      	<input  type="number" size=10 style="width:210px" placeholder="Dias de Credito">&nbsp;&nbsp;&nbsp;
+					      	<label>Número de Precio</label>
+					      	<select  style="width:50px">
+					      		<option>1</option>
+					      		<option>2</option>
+					      		<option>3</option>
+					      		<option>4</option>
+					      	</select>&nbsp;&nbsp;&nbsp;
+					      	<label>Fecha de Alta </label>
+					      	<input  type="date" size=10 style="width:210px" disabled=""><br>
+					      	<label>Paqueteria</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					      	<input  type="text" size=10 style="width:210px" placeholder="Paqueteria">
+				      	</form>
+				      	<br><br><br><br><br><br>
+				      	<div class="float-right">
+					      	<button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Cancelar</button>
+					        <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+				        </div>
+				      </div>
+				    </div>
+				  </div>
+				</div>
+
+
+				<!-- Modal Editar-->
+				<div class="modal fade" id="EditarCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
 				  <div class="modal-dialog modal-xl" role="document">
 				    <div class="modal-content">
 				      <div class="modal-header">
@@ -343,112 +666,29 @@
 				    </div>
 				  </div>
 				</div>
-
-
-				<!-- Modal Editar-->
-				<div class="modal fade" id="EditarCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
-				  <div class="modal-dialog modal-xl" role="document">
-				    <div class="modal-content">
-				      <div class="modal-header">
-				        <h5 class="modal-title" id="exampleModalLabel">Agregar Cliente</h5>
-				        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-				          <span aria-hidden="true">&times;</span>
-				        </button>
-				      </div>
-				      <div class="modal-body">
-				      	<form>
-					      	<label>Clave de Registro: </label>
-					      	<input  type="text" size=10 style="width:210px">
-					      	<label>Categoría</label>
-					      	<select  style="width:130px">
-					      		<option>Audio Car</option>
-					      		<option>Audio Pro</option>
-					      		<option>Tecnico</option>
-					      		<option>Ingeniero</option>
-					      		<option>Menudista</option>
-					      		<option>Mayorista</option>
-					      		<option>Reparaciones</option>
-					      	</select><br>
-					      	<label>Representante: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:565px">&nbsp;&nbsp;&nbsp;
-					      	<label>Teléfono: </label>&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:170px"><br>
-					      	<label>Celular: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:170px">&nbsp;&nbsp;&nbsp;
-					      	<label>Email: </label>&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:410px">&nbsp;&nbsp;&nbsp;
-					      	<br>
-					      	<label>Notas: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:565px">
-					      	<br>
-					      	<label>Domicilio Casa: </label>&nbsp;&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:800px"><br>
-					      	<label>Ciudad: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:210px">&nbsp;&nbsp;&nbsp;
-					      	<label>Estado: </label>&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:210px">&nbsp;&nbsp;&nbsp;
-					      	<label>Pais: </label>&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:210px">
-					      	<br><br><br>
-					      	<label>Razon Social: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:640px">&nbsp;&nbsp;&nbsp;
-					      	<label>RFC: </label>
-					      	<input  type="text" size=10 style="width:210px"><br>
-					      	<label>Celular Empresa: </label>&nbsp;
-					      	<input  type="text" size=10 style="width:170px">&nbsp;&nbsp;&nbsp;
-					      	<label>Celular Empresa: </label>
-					      	<input  type="text" size=10 style="width:170px">&nbsp;&nbsp;&nbsp;
-					      	<label>Email Empresa: </label>
-					      	<input  type="text" size=10 style="width:410px"><br>
-					      	<label>Notas: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:565px"><br>
-					      	<label>Domicilio Empresa: </label>&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:800px"><br>
-					      	<label>Ciudad Empresa: </label>&nbsp;
-					      	<input  type="text" size=10 style="width:210px">&nbsp;&nbsp;&nbsp;
-					      	<label>Estado: </label>&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:210px">&nbsp;&nbsp;&nbsp;
-					      	<label>Pais Empresa: </label>
-					      	<input  type="text" size=10 style="width:210px">&nbsp;&nbsp;&nbsp;
-					      	<label>C.P: </label>
-					      	<input  type="text" size=10 style="width:125px">&nbsp;&nbsp;&nbsp;
-					      	<br><br><br>
-					      	<label>Banaco: </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:210px">&nbsp;&nbsp;&nbsp;
-					      	<label>Cuenta: </label>
-					      	<input  type="text" size=10 style="width:365px"><br>
-					      	<label>Clave Interbancaria: </label>&nbsp;&nbsp;&nbsp;
-					      	<input  type="text" size=10 style="width:485px">&nbsp;&nbsp;&nbsp;
-					      	<label>Limite de Credito: </label>
-					      	<input  type="number" size=10 style="width:210px"><br>
-					      	<label>Dias de Credito: </label>&nbsp;&nbsp;&nbsp;
-					      	<input  type="number" size=10 style="width:210px">&nbsp;&nbsp;&nbsp;
-					      	<label>Categoría</label>
-					      	<select  style="width:130px">
-					      		<option>1</option>
-					      		<option>2</option>
-					      		<option>3</option>
-					      		<option>4</option>
-					      	</select>&nbsp;&nbsp;&nbsp;
-					      	<label>Fecha de Alta: </label>
-					      	<input  type="text" size=10 style="width:210px" disabled="">
-					      	<label>Paqueteria:&nbsp;&nbsp;&nbsp;</label>
-					      	<input  type="text" size=10 style="width:210px">
-				      	</form>
-				      	<br><br><br><br><br><br>
-				      	<div class="float-right">
-					      	<button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Cancelar</button>
-					        <button type="button" class="btn btn-primary btn-sm">Guardar</button>
-				        </div>
-				      </div>
-				    </div>
-				  </div>
-				</div>
 		</div>
 		<!-- End Page -->
 
 		<!-- JQuery min js -->
 		<script src="assets/plugins/jquery/jquery.min.js"></script>
+
+		<!-- Internal Data tables -->
+		<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+		<script src="assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+		<script src="assets/plugins/datatable/js/jquery.dataTables.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+		<script src="assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+		<script src="assets/plugins/datatable/js/jszip.min.js"></script>
+		<script src="assets/plugins/datatable/js/pdfmake.min.js"></script>
+		<script src="assets/plugins/datatable/js/vfs_fonts.js"></script>
+		<script src="assets/plugins/datatable/js/buttons.html5.min.js"></script>
+		<script src="assets/plugins/datatable/js/buttons.print.min.js"></script>
+		<script src="assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+		<script src="assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
 
 		<!-- Bootstrap Bundle js -->
 		<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -485,6 +725,9 @@
 
 		<!-- custom js -->
 		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/table-data.js"></script>
+
+		
 
 	</body>
 </html>
