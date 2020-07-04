@@ -1,0 +1,595 @@
+
+<!doctype html>
+<html lang="es" dir="ltr">
+	<head>
+
+		<meta charset="UTF-8">
+		<meta name='viewport' content='width=device-width, initial-scale=1.0, user-scalable=0'>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="Description" content="Bootstrap Responsive Admin Web Dashboard HTML5 Template">
+		<meta name="Author" content="Spruko Technologies Private Limited">
+		<meta name="Keywords" content="admin,admin dashboard,admin dashboard template,admin panel template,admin template,admin theme,bootstrap 4 admin template,bootstrap 4 dashboard,bootstrap admin,bootstrap admin dashboard,bootstrap admin panel,bootstrap admin template,bootstrap admin theme,bootstrap dashboard,bootstrap form template,bootstrap panel,bootstrap ui kit,dashboard bootstrap 4,dashboard design,dashboard html,dashboard template,dashboard ui kit,envato templates,flat ui,html,html and css templates,html dashboard template,html5,jquery html,premium,premium quality,sidebar bootstrap 4,template admin bootstrap 4"/>
+
+		<!-- Title -->
+		<title> Panel de Control | AC Electroníca </title>
+
+		<!-- Favicon -->
+		<link rel="icon" href="assets/img/brand/favicon.png" type="image/x-icon"/>
+
+		<!-- Icons css -->
+		<link href="assets/css/icons.css" rel="stylesheet">
+
+		<!--  Right-sidemenu css -->
+		<link href="assets/plugins/sidebar/sidebar.css" rel="stylesheet">
+
+		
+
+		<!--  Custom Scroll bar-->
+		<link href="assets/plugins/mscrollbar/jquery.mCustomScrollbar.css" rel="stylesheet"/>
+
+		<!--- Style css-->
+		<link href="assets/css/style.css" rel="stylesheet">
+		<link href="assets/css/style-dark.css" rel="stylesheet">
+
+		<!---Skinmodes css-->
+		<link href="assets/css/skin-modes.css" rel="stylesheet" />
+
+		<!--- Animations css-->
+		<link href="assets/css/animate.css" rel="stylesheet">
+
+		<style type="text/css">
+		select{
+    
+		    background: rgba(0,0,0,0.3);
+		    color:#fff;
+		    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+		}
+		</style>
+
+		<!-- Internal Data table css -->
+		<link href="assets/plugins/datatable/css/dataTables.bootstrap4.min.css" rel="stylesheet" />
+		<link href="assets/plugins/datatable/css/buttons.bootstrap4.min.css" rel="stylesheet">
+		<link href="assets/plugins/datatable/css/responsive.bootstrap4.min.css" rel="stylesheet" />
+		<link href="assets/plugins/datatable/css/jquery.dataTables.min.css" rel="stylesheet">
+		<link href="assets/plugins/datatable/css/responsive.dataTables.min.css" rel="stylesheet">
+
+	</head>
+
+	<body class="main-body">
+
+		<!-- Loader -->
+		<div id="global-loader">
+			<img src="assets/img/loader.svg" class="loader-img" alt="Loader">
+		</div>
+		<!-- /Loader -->
+
+		<!-- Page -->
+		<div class="page">
+				<!-- container opened -->
+				
+					<!-- row -->
+					<div class="row p-0">
+        <div class="col-lg-12 col-md-12">
+            <div class="card bg-primary text-white mb-0">
+                <div class="card-body">
+                    <div class="row">
+                        <div class="col-lg-1 mg-t-20 mg-lg-t-0">
+                            <a href=""><img src="assets/img/logo1.png" width="40"></a>
+                        </div>
+                        <div class="col-lg-1 mg-t-20 mg-lg-t-0">
+                            <h6>Juan Perez</h6>
+                        </div>
+                        <div class="col-lg-6 mg-t-20 mg-lg-t-0">
+                            <div class="input-group">
+                                <input class="form-control form-control-sm" style="background-color: #fff; color:#000 " placeholder="Bucar..." type="text"> <span class="input-group-btn"><button class="btn btn-success btn-sm" type="button"><i class="fa fa-search"></i></button>
+                            </div><!-- input-group -->
+                        </div><!-- col-4 -->
+
+                        <div class="col-lg-4 mg-t-20 mg-lg-t-0">
+                            <button class="btn btn-success btn-sm" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#NuevoCliente"><i class="fas fa-user-plus"></i> Nuevo</button>
+                            <a href="index.html" class="btn btn-dark btn-sm">Cerrar Sesión</a>&nbsp;&nbsp;
+                            <i class="fas fa-bell"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="col-lg-12 col-md-12 m-0">
+            <div class="card">
+                <div class="card-body">
+
+                    <label>Usuario </label>&nbsp;&nbsp;&nbsp;
+                    <input type="text" size=10 style="width:175px; background-color: #dcdcdc;" disabled="" value="99999999999999999999">&nbsp;&nbsp;&nbsp;
+                    <label>Contraseña</label>&nbsp;&nbsp;&nbsp;
+                    <input type="number" size=10 style="width:105px; background-color: #dcdcdc;" disabled="" value="9999999999">&nbsp;&nbsp;&nbsp;
+                    <label>Dirección </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" size=10 style="width:800px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+                    <label>Teléfono </label>&nbsp;&nbsp;&nbsp;
+                    <input type="text" size=10 style="width:175px; background-color: #dcdcdc;" disabled="">
+                    <label>Celular </label>&nbsp;&nbsp;&nbsp;
+                    <input type="text" size=10 style="width:175px; background-color: #dcdcdc;" disabled=""><br>
+                    <label>CURP </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" size=10 style="width:220px; background-color: #dcdcdc;" disabled="" value="9999999999999999999999999">&nbsp;&nbsp;&nbsp;
+                    <label>NSS </label>&nbsp;&nbsp;&nbsp;
+                    <input type="text" size=10 style="width:175px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+                    <label>Número de Infonavit </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <input type="text" size=10 style="width:140px; background-color: #dcdcdc; " disabled="" value="999999999999999">&nbsp;&nbsp;&nbsp;
+                    <label>Fecha de Nacimiento </label>&nbsp;&nbsp;&nbsp;
+                    <input type="text" size=10 style="width:100px; background-color: #dcdcdc;" disabled="" value="20/05/1999">&nbsp;&nbsp;&nbsp;<br><br>
+                    <label>Clienetes</label>&nbsp;
+                    <input type="checkbox" name="" disabled="">&nbsp;&nbsp;&nbsp;
+                    <label>Proveedores</label>&nbsp;
+                    <input type="checkbox" name="" disabled="">&nbsp;&nbsp;&nbsp;
+                    <label>Almacen</label>&nbsp;
+                    <input type="checkbox" name="" disabled="">&nbsp;&nbsp;&nbsp;
+                    <label>Insumos</label>&nbsp;
+                    <input type="checkbox" name="" disabled="">&nbsp;&nbsp;&nbsp;
+                    <label>Ventas</label>&nbsp;
+                    <input type="checkbox" name="" disabled="">&nbsp;&nbsp;&nbsp;
+                    <label>Cerrar Ventas</label>&nbsp;
+                    <input type="checkbox" name="" disabled="">&nbsp;&nbsp;&nbsp;
+                    <label>Control de Usuario</label>&nbsp;
+                    <input type="checkbox" name="" disabled="">&nbsp;&nbsp;&nbsp;
+                    
+
+                    <br><br>
+                    <table class="table table-sm table-bordered table-hover " id="usuarios">
+                        <thead>
+                            <tr>
+                                <th>Usuario</th>
+                                <th style="width: 20px">Acciones</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+                            <tr>
+                                <td>Bella</td>
+                                <td>
+                                    <div class="btn-group" role="group">
+                                        <button class="btn btn-info btn-sm" type="button" data-toggle="modal" data-backdrop="static" data-keyboard="false" data-target="#EditarCliente"><i class="fas fa-user-edit"></i></button>
+                                        <button class="btn btn-danger btn-sm" type="button"><i class="fas fa-user-times"></i></button>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- /row -->
+        </div>
+        <!-- Container closed -->
+    </div>
+			
+			<!-- main-content closed -->
+
+
+			<!-- Modal Agregar-->
+				<div class="modal fade" id="NuevoCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header" style="background-color: #ffab00;">
+                            <h5 class="modal-title" id="exampleModalLabel">Agregar Usuario</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <label>Usuario </label>&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:175px; background-color: #dcdcdc;" placeholder="Usuario">&nbsp;&nbsp;&nbsp;
+                                <label>Contraseña</label>&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:105px; background-color: #dcdcdc;" placeholder="Contraseña"><br>
+                                <label>Dirección </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:800px; background-color: #dcdcdc;" placeholder="Dirección"><br>
+                                <label>Teléfono </label>&nbsp;&nbsp;
+                                <input type="number" size=10 style="width:175px; background-color: #dcdcdc;" placeholder="Teléfono">&nbsp;&nbsp;&nbsp;
+                                <label>Celular </label>&nbsp;&nbsp;&nbsp;
+                                <input type="number" size=10 style="width:175px; background-color: #dcdcdc;" placeholder="Celular">&nbsp;&nbsp;&nbsp;
+                                <label>CURP </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:220px; background-color: #dcdcdc;" placeholder="CURP">&nbsp;&nbsp;&nbsp;
+                                <label>NSS </label>&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:175px; background-color: #dcdcdc;" placeholder="NSS">&nbsp;&nbsp;&nbsp;
+                                <label>Número de Infonavit </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:140px; background-color: #dcdcdc; " placeholder="Número de Infonavit">&nbsp;&nbsp;&nbsp;
+                                <label>Fecha de Nacimiento </label>&nbsp;&nbsp;&nbsp;
+                                <input type="date" size=10 style="width:150px; background-color: #dcdcdc;">&nbsp;&nbsp;&nbsp;
+                                <label>Fecha de Alta </label>&nbsp;&nbsp;&nbsp;
+                                <input type="date" size=10 style="width:150px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+                                <br><br>
+                                <label>Foto</label>&nbsp;&nbsp;&nbsp;
+                                <input type="file" name="">
+                                <br><br>
+                                <label>Clienetes</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Proveedores</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Almacen</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Insumos</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Ventas</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Cerrar Ventas</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Control de Usuario</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                            </form>
+                            <br><br><br><br><br><br>
+                            <div class="float-right">
+                                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal Editar-->
+            <div class="modal fade" id="EditarCliente" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl" role="document">
+                    <div class="modal-content">
+                        <div class="modal-header"  style="background-color: #ffab00;">
+                            <h5 class="modal-title" id="exampleModalLabel">Editar Usuario</h5>
+                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                <span aria-hidden="true">&times;</span>
+                            </button>
+                        </div>
+                        <div class="modal-body">
+                            <form>
+                                <label>Usuario </label>&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:175px; background-color: #dcdcdc;">&nbsp;&nbsp;&nbsp;
+                                <label>Contraseña</label>&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:105px; background-color: #dcdcdc;"><br>
+                                <label>Dirección </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:800px; background-color: #dcdcdc;"><br>
+                                <label>Teléfono </label>&nbsp;&nbsp;
+                                <input type="number" size=10 style="width:175px; background-color: #dcdcdc;">&nbsp;&nbsp;&nbsp;
+                                <label>Celular </label>&nbsp;&nbsp;&nbsp;
+                                <input type="number" size=10 style="width:175px; background-color: #dcdcdc;">&nbsp;&nbsp;&nbsp;
+                                <label>CURP </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:220px; background-color: #dcdcdc;">&nbsp;&nbsp;&nbsp;
+                                <label>NSS </label>&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:175px; background-color: #dcdcdc;">&nbsp;&nbsp;&nbsp;
+                                <label>Número de Infonavit </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <input type="text" size=10 style="width:140px; background-color: #dcdcdc;">&nbsp;&nbsp;&nbsp;
+                                <label>Fecha de Nacimiento </label>&nbsp;&nbsp;&nbsp;
+                                <input type="date" size=10 style="width:150px; background-color: #dcdcdc;">&nbsp;&nbsp;&nbsp;
+                                <label>Fecha de Alta </label>&nbsp;&nbsp;&nbsp;
+                                <input type="date" size=10 style="width:150px; background-color: #dcdcdc;" disabled="">&nbsp;&nbsp;&nbsp;
+                                <br><br>
+                                <label>Foto</label>&nbsp;&nbsp;&nbsp;
+                                <input type="file" name="">
+                                <br><br>
+                                <label>Clienetes</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Proveedores</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Almacen</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Insumos</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Ventas</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Cerrar Ventas</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                                <label>Control de Usuario</label>&nbsp;
+                                <input type="checkbox" name="" >&nbsp;&nbsp;&nbsp;
+                            </form>
+                            <br><br><br><br><br><br>
+                            <div class="float-right">
+                                <button type="button" class="btn btn-primary btn-sm" data-dismiss="modal">Cancelar</button>
+                                <button type="button" class="btn btn-primary btn-sm">Guardar</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+		</div>
+		<!-- End Page -->
+
+		<!-- JQuery min js -->
+		<script src="assets/plugins/jquery/jquery.min.js"></script>
+
+		<!-- Internal Data tables -->
+		<script src="assets/plugins/datatable/js/jquery.dataTables.min.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.dataTables.min.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+		<script src="assets/plugins/datatable/js/responsive.dataTables.min.js"></script>
+		<script src="assets/plugins/datatable/js/jquery.dataTables.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.bootstrap4.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.buttons.min.js"></script>
+		<script src="assets/plugins/datatable/js/buttons.bootstrap4.min.js"></script>
+		<script src="assets/plugins/datatable/js/jszip.min.js"></script>
+		<script src="assets/plugins/datatable/js/pdfmake.min.js"></script>
+		<script src="assets/plugins/datatable/js/vfs_fonts.js"></script>
+		<script src="assets/plugins/datatable/js/buttons.html5.min.js"></script>
+		<script src="assets/plugins/datatable/js/buttons.print.min.js"></script>
+		<script src="assets/plugins/datatable/js/buttons.colVis.min.js"></script>
+		<script src="assets/plugins/datatable/js/dataTables.responsive.min.js"></script>
+		<script src="assets/plugins/datatable/js/responsive.bootstrap4.min.js"></script>
+
+		<!-- Bootstrap Bundle js -->
+		<script src="assets/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+		<!-- Ionicons js -->
+		<script src="assets/plugins/ionicons/ionicons.js"></script>
+
+		<!-- Moment js -->
+		<script src="assets/plugins/moment/moment.js"></script>
+
+		<!-- P-scroll js -->
+		<script src="assets/plugins/perfect-scrollbar/perfect-scrollbar.min.js"></script>
+		<script src="assets/plugins/perfect-scrollbar/p-scroll.js"></script>
+
+		<!-- Sticky js -->
+		<script src="assets/js/sticky.js"></script>
+
+		<!-- eva-icons js -->
+		<script src="assets/js/eva-icons.min.js"></script>
+
+		<!-- Rating js-->
+		<script src="assets/plugins/rating/jquery.rating-stars.js"></script>
+		<script src="assets/plugins/rating/jquery.barrating.js"></script>
+
+		<!-- Custom Scroll bar Js-->
+		<script src="assets/plugins/mscrollbar/jquery.mCustomScrollbar.concat.min.js"></script>
+
+		<!-- Horizontalmenu js-->
+		<script src="assets/plugins/horizontal-menu/horizontal-menu-2/horizontal-menu.js"></script>
+
+		<!-- Right-sidebar js -->
+		<script src="assets/plugins/sidebar/sidebar.js"></script>
+		<script src="assets/plugins/sidebar/sidebar-custom.js"></script>
+
+		<!-- custom js -->
+		<script src="assets/js/custom.js"></script>
+		<script src="assets/js/table-data.js"></script>
+
+		
+
+	</body>
+</html>
