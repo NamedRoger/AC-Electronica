@@ -1,5 +1,13 @@
 ﻿"use strict";
+const instance = axios.create({
+  baseURL: 'http://l.iqtics.mx/api',
+  timeout: 2000,
+  headers: {
+
+  }
+});
 const apiUrl = "http://l.iqtics.mx/api";
+//http://l.iqtics.mx/api/opcionesMenu/categoriaMenu/categoriaCliente
 // const apiUrl = () => {
 //   const [url,protocl,hostname,path] = /^(\w+):\/\/([^\/]+)([^]+)$/.exec(window.location.href);
 //   return `${protocl}://${hostname}/api`;
@@ -78,15 +86,27 @@ async function Ready() {
 }
 
 async function getClientes() {
-  const result = await HttpClient.get(`${apiUrl}/clientes`);
-  return result || [];
+  try{
+    const response = await instance.get(`/clientes`);
+    return response.data;
+  }catch(error){
+    console.error(error);
+    return [];
+  }
 }
 
 async function addCliente(newCliente){
-  const result = await HttpClient.post(`${apiUrl}/clientes`,newCliente);
-  if(result !== undefined && result !== null ){
-    window.location.reload();
+  if(newCliente instanceof FormData){
+    const response = await instance.post('/clientes',newCliente,{headers:{
+      "Content-Type":"application/json"
+    }});
+    console.log(response);
   }
+  
+  // const result = await HttpClient.post(`${apiUrl}/clientes`,newCliente);
+  // if(result !== undefined && result !== null ){
+  //   window.location.reload();
+  // }
 }
 
 async function editClient(id,cliente){
@@ -118,13 +138,23 @@ async function exportXls(e){
 }
 
 async function getCategorias() {
-  const result = await HttpClient.get(`${apiUrl}/opcionMenus/CategoriaMenu/categoriacliente`);
-  return result;
+  try{
+    const response = await instance.get(`/opcionesMenu/categoriaMenu/categoriaCliente`);
+    return response.data;
+  }catch(error){
+    console.error(error);
+    return [];
+  }
 }
 
 async function getPrecios(){
-  const result = await HttpClient.get(`${apiUrl}/opcionMenus/CategoriaMenu/preciocliente`);
-  return result;
+  try{
+    const response = await instance.get(`/opcionesMenu/categoriaMenu/categoriaPrecio`);
+    return response.data;
+  }catch(error){
+    console.error(error);
+    return [];
+  }
 }
 
 const findClientIndex = (idCliente) =>
@@ -265,29 +295,6 @@ function resetForm(form) {
 }
 
 class HttpClient {
-  static async get(url) {
-    const result = await fetch(url)
-      .then(async (res) => {
-        if(res.ok){ 
-          const contentType = res.headers.get("content-type");
-          if (contentType && contentType.indexOf("application/json") !== -1) {
-            return await res.json();
-          }
-          else if (contentType && 
-            contentType.indexOf("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet") !== -1){
-              return await res.blob();
-          }
-          else {
-            console.log("Oops, we haven't got JSON!");
-          }
-        }else {
-           throw "Error";
-        }
-      })
-      .catch((error) => console.log(error));
-
-    return result;
-  }
 
   static post(url, data) {
     const result = fetch(url, {
